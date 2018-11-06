@@ -179,7 +179,7 @@ void writeGPS() {
     sprintf(buffer_latitude, "%.6f", latitude);
     sprintf(buffer_longitude, "%.6f", longitude);
   }
-  String gpsData = "PackCTRL 2.0 location:\n\nhttps://www.google.com.br/maps/place/" + String(buffer_latitude) + "," + String(buffer_longitude) + "\n\nNumber of satellites: " + String(buff); //null altitude
+  String gpsData = "Location:\n\nhttps://www.google.com.br/maps/place/" + String(buffer_latitude) + "," + String(buffer_longitude) + "\n\nNumber of satellites: " + String(buff); //null altitude
   smsSender(phoneNumber, gpsData);
 }
 

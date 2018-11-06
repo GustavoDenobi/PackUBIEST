@@ -18,19 +18,18 @@ int authSetupDelay = 60; // In seconds, defines how long the authSetup function 
 int batteryCheckCount = 30; // Number of loops it will wait until performing a battery level check
 int batteryCheckCountRst = batteryCheckCount; // Number of loops it will wait until performing a battery level check
 bool batteryCheckMode = true;
-String authPassword = "Auth Arroz96"; // Password for granting access in authSetup.
-char pubkey[] = "pub-c-ac4d7b48-054e-423f-9c20-bea57ea1aeb5";
-char subkey[] = "sub-c-92365414-1269-11e8-b32f-5ea260837941";
-char channel[] = "PackVRESTO";
-////////////////////////////////////////////////////////
-
+String authPassword = ""; // Password for granting access in authSetup.
+char pubkey[] = "";
+char subkey[] = "";
+char channel[] = "";
 String message = "";
 char phoneNumber[20];
-char adminPhoneNumber[20] = "043999605857";
-char authPhoneNumber[20] = "043999605857";
+char adminPhoneNumber[20] = "";
+char authPhoneNumber[20] = "";
 String incomingSMS;
 int awareStatus; // 1- active    2 - lost connection    3 - unable to connect    4 - deactivated by user
 char buff[256];
+////////////////////////////////////////////////////////
 
 //GPS exclusive
 gpsSentenceInfoStruct info;
